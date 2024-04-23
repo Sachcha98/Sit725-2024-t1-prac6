@@ -12,7 +12,7 @@ describe("This is a GET method", function () {
 
       let responseObj = JSON.parse(c);
 
-      expect(responseObj).to.be.an("object_01");
+      expect(responseObj).to.be.an("object");
 
       done();
     });
@@ -23,7 +23,7 @@ describe("This is a POST method", function () {
   it("Test_POST_Method", function (done) {
     request.post({ url: url, form: cat }, function (a, b, c) {
       let responseObj = JSON.parse(c);
-      expect(responseObj).to.be.an("object_01");
+      expect(responseObj).to.be.an("object");
       console.log(arguments);
       console.log(1);
 
